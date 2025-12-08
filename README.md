@@ -129,12 +129,34 @@ e2e/
 
 
 
+**Steps to Reproduce** 
 
-Notes & Challenges
+**Manual Testing for nopCommerce**
+-Navigate to https://demo.nopcommerce.com.
+-Review the Strategy and Test Plan.
+-Execute each manual test case from the test cases spreadsheet.
+-Document results in the manual test summary.
+-Log defects in Jira. I included a mock defect.
+-Export Jira progress and attach screenshots.
+
+
+**Automated Testing for Broadleaf Commerce**
+-Clone this repository.
+-Open the project folder in VS Code.
+-Install dependencies using npm install.
+-Open the cypress test runner with npx cypress open.
+-Select E2E Testing and choose a browser.
+-Run any test from the /cypress/e2e/BroadleafCypressTests/ folder.
+
+
+
+
+
+***Notes and Challenges***
 -nopCommerce manual tests completed successfully
 -CAPTCHA prevented cypress automation on nopCommerce
 -Broadleaf Commerce fully supported automation
--Checkout required handling hidden DOM elements
+-Checkout required handling for hidden DOM elements
 -Stripe card fields required special selectors
 -Multiple stage checkout with CSS controlled visibility
 -Required custom waits, .within() and timeout adjustments
@@ -142,7 +164,7 @@ Notes & Challenges
 
 
 
-Conclusion
+**Conclusion**
 
 This capstone demonstrates a complete QA workflow across two applications which include nopCommerce for manual testing and Jira bug reporting and tracking, and the Broadleaf Commerce demo site for automated Cypress tests, performance and accessibility checks and API validation.
 
