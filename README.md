@@ -18,16 +18,17 @@ This README explains that separation clearly so that the project is easy to unde
 
 **Manual Testing on nopCommerce**
 
-All manual testing was completed on https://demo.nopcommerce.com and includes:
+All manual testing was completed on https://demo.nopcommerce.com
 
+Deliverables:
 -Strategy and Test Plan
--Test Cases
+-Test Cases Spreadsheet
 -Manual Test Summary
 -Jira Progress Screenshots
--Jira Bug Report which includes a mock bug created as no real UI bugs were identified.
+-A mock bug report created with jira for demonstration as no real UI bugs were identified.
 -Jira Excel Export
 
-These files are included in the repository:
+All are included in the repository:
 -StrategyAndTestPlan.pages
 -nopCommerceManualTestCases.xlsx
 -ManualTestSummaryNopCommerce.pages
@@ -41,19 +42,19 @@ These files are included in the repository:
 When beginning automation, I discovered that nopCommerce uses reCAPTCHA on critical flows. Cypress cannot bypass reCAPTCHA, so automated e2e and performance testing is not doable on that application.
 To complete the automation portion of the capstone, I selected the Broadleaf Commerce Demo site https://demo.broadleafcommerce.org.
 
-This application allowed me to automate:
+Broadleaf Commerce allowed full automation of:
 -E2E checkout flow
--Add items to Cart
--Remove items from Cart
+-Add items to cart
+-Remove items from cart
 -Guest Checkout
--Filling the shipping, billing, address and email forms
--The payment step
--Confirmation page assertion
--Performance test with navigation Timing API
--Accessibility test using a11y plugin
--API tests using Cypress request
+-Filling shipping, billing, and email forms
+-Payment navigation
+-Confirmation page validation
+-Performance test with Navigation Timing API
+-Accessibility testing using cypress axe plugin
+-API verification using cy.request()
 
-All Cypress tests are located in the /cypress/e2e/ file located inside of the broadleafCypressTests folder.
+All automated tests are located inside /cypress/e2e/broadleafCypressTests/ folder.
 
 **Automated tests implemented with Broadleaf**
 
@@ -108,9 +109,12 @@ Included using Cypress accessibility plugin
 
 **API testing**
 
-Uses cy.request() for backend verification.
-Files for e2e testing using Broadleaf demo site via Cypress:
+-Uses cy.request() for backend responses.
+-Confirms status codes, payload structure and business logic.
 
+
+
+**Automated Test Files:**
 cypress/
 e2e/
 -cart.cy.js
@@ -128,20 +132,18 @@ e2e/
 
 Notes & Challenges
 -nopCommerce manual tests completed successfully
--Pivot made due to reCAPTCHA blocking automation
--Broadleaf Commerce allowed full automation
--Checkout automation required handling:
--Delayed DOM rendering
--Hidden billing/shipping containers
--Multiple stages controlled by CSS visibility
--Custom selectors and timeouts
--Stripe test credit card fields (demo mode)
+-CAPTCHA prevented cypress automation on nopCommerce
+-Broadleaf Commerce fully supported automation
+-Checkout required handling hidden DOM elements
+-Stripe card fields required special selectors
+-Multiple stage checkout with CSS controlled visibility
+-Required custom waits, .within() and timeout adjustments
 
 
 
 
 Conclusion
 
-This capstone demonstrates a complete QA workflow across two applications which include nopCommerce for manual testing and Jira bug reporting and handling, and the Broadleaf Commerce demo site for automated Cypress testing including e2e, performance, and accessibility checks
+This capstone demonstrates a complete QA workflow across two applications which include nopCommerce for manual testing and Jira bug reporting and tracking, and the Broadleaf Commerce demo site for automated Cypress tests, performance and accessibility checks and API validation.
 
 Amber Burlet QA
