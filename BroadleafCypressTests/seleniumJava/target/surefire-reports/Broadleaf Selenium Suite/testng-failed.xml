@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Broadleaf Selenium Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="classes" name="UI Flow Tests(failed)" verbose="0">
+    <classes>
+      <class name="tests.RegistrationMultiStepTest">
+        <methods>
+          <include name="userCanRegisterWithValidData"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.RegistrationMultiStepTest -->
+    </classes>
+  </test> <!-- UI Flow Tests(failed) -->
+</suite> <!-- Failed suite [Broadleaf Selenium Suite] -->
