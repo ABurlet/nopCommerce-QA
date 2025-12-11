@@ -1,0 +1,3 @@
+tests/CheckoutMultiStepTest.class
+tests/RegistrationMultiStepTest.class
+tests/BaseTest.class
