@@ -12,7 +12,7 @@ This project demonstrates a full QA workflow including:
 -Automating end-to-end tests using Cypress
 -Performance and accessibility testing
 
-I initially selected nopCommerce for the project’s manual testing component. However, when I began the automatio phase with Cypress, the site included reCAPTCHA, which prevents Cypress from interacting with critical functionality, such as login and checkout. Because automated testing cannot bypass CAPTCHA, I pivoted to the Broadleaf Commerce Demo site for the Cypress e2e tests.
+I initially selected nopCommerce for the project’s manual testing component. However, when I began the automation phase with Cypress, the site included reCAPTCHA, which prevents Cypress from interacting with critical functionality, such as login and checkout. Because automated testing cannot bypass CAPTCHA, I pivoted to the Broadleaf Commerce Demo site for the Cypress e2e tests.
 This README explains that separation clearly so that the project is easy to understand.
 
 
